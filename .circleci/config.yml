@@ -1,0 +1,16 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: hashicorp/packer:1.1.1
+    working_directory: ~/packer
+    steps:
+      - checkout
+      - run:
+          name: Build ami
+          command: packer build ami.json
+workflows:
+  version: 2.1
+  build_ami:
+    jobs:
+      - build

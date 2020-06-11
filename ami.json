@@ -7,7 +7,8 @@
       "source_ami":"{{env `SOURCE_AMI`}}",
       "ssh_username":"{{env `SSH_USERNAME`}}",
       "subnet_id":"{{env `SUBNET_ID`}}",
-      "ami_name":"{{env `AMI_NAME`}}"
+      "ami_name":"{{env `AMI_NAME`}}",
+      "ami_users":"{{env `AMI_USERS`}}"
     },
     "builders": [
       {
@@ -15,6 +16,7 @@
         "access_key": "{{user `aws_access_key`}}",
         "secret_key": "{{user `aws_secret_key`}}",
         "region":"{{user `aws_region`}}" ,
+	"ami_users": "{{user `ami_users`}}",
         "source_ami":"{{user `source_ami`}}",
         "instance_type": "t2.micro",
         "ssh_username": "{{user `ssh_username`}}",

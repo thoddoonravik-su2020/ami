@@ -16,7 +16,7 @@
         "access_key": "{{user `aws_access_key`}}",
         "secret_key": "{{user `aws_secret_key`}}",
         "region":"{{user `aws_region`}}" ,
-	"ami_users": "{{user `ami_users`}}",
+	      "ami_users": "{{user `ami_users`}}",
         "source_ami":"{{user `source_ami`}}",
         "instance_type": "t2.micro",
         "ssh_username": "{{user `ssh_username`}}",

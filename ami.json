@@ -43,7 +43,7 @@
                 "sudo apt-get update",
                 "curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -",
                 "sudo apt-get install -y nodejs",
-                "sudo npm install -g @angular/cli",
+                "sudo npm install -g -y @angular/cli",
                 "sudo apt install unzip -y",
                 "sudo apt-get install apache2 -y",
                 "sudo apt-get install -y ruby",
